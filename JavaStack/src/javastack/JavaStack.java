@@ -7,7 +7,7 @@ package javastack;
 
 /**
  *
- * @author ekozi
+ * @author Egot Kozitski
  */
 import java.util.Scanner;
 public class JavaStack {
@@ -21,7 +21,7 @@ public class JavaStack {
        if(str.length()%2==0)
        {
              boolean flag =false;
-             System.out.println(str.charAt(0)+" "+str.charAt(1));
+         
              //check if they are separated
         
               String compare = String.valueOf(str.charAt(0))+String.valueOf(str.charAt(1));  
@@ -42,7 +42,7 @@ public class JavaStack {
               
                 }
             
-            System.out.println("Outside");
+           
             
            //nested check
            int leftEnd=0;

@@ -30,21 +30,27 @@ public class Dequee {
             int difference = n-m+1;
             int j =0;
            List<Integer> dummy = new ArrayList<Integer>();
+           
             for(int i=0;i<difference;i++){
              
-               dummy.clear();
+               
                 for( ;j<m;){
                     dummy.add(list.get(j));
                     j++;
                 }
+              
                 m++;
-                j=m-j;
+                System.out.println(difference);
+                j=i;
                 map.put(i, dummy);
-                dummy = new ArrayList<>();
+                if(dummy.size()>0)
+                    dummy.remove(0);
         
             
     }
-                System.out.println(map);
+            System.out.println(map);
+   
+                
     
 }
 }

@@ -34,21 +34,34 @@ public class Dequee {
             for(int i=0;i<difference;i++){
              
                
-                for( ;j<m;){
+                for(j=i ;j<m;){
+                
                     dummy.add(list.get(j));
                     j++;
                 }
               
                 m++;
-                System.out.println(difference);
-                j=i;
+               
+              
+               
                 map.put(i, dummy);
-                if(dummy.size()>0)
-                    dummy.remove(0);
-        
+                
+                dummy = new ArrayList<Integer>();
             
-    }
-            System.out.println(map);
+        }   
+          
+         Map<Integer,Integer> compar= new HashMap<Integer,Integer>();
+         int counter=0;
+           int max=0;
+          for(Map.Entry<Integer,List<Integer>> entry : map.entrySet()){
+            HashSet<Integer> set = new HashSet<>(entry.getValue());
+           if(max<set.size())
+               max=set.size();
+        }
+          System.out.println(max);
+          
+       
+        
    
                 
     
